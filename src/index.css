@@ -42,4 +42,5 @@
     url("./assets/pattern-hills.svg");
   background-position: center, bottom;
   background-repeat: repeat, no-repeat;
+  background-size: auto, contain;
 }
