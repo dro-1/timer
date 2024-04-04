@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Red Hat Text, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bottom-clip {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.top-clip {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.rot-8 {
+  transform: perspective(300px) rotateX(-8deg);
+}
+
+.-rot-8 {
+  transform: perspective(300px) rotateX(5deg);
+}
+
+.rot-180 {
+  transform: perspective(190px) rotateX(180deg);
+}
+.-rot-180 {
+  transform: perspective(190px) rotateX(-180deg);
+}
+
+.star-bg {
+  background-image: url("./assets/bg-stars.svg"),
+    url("./assets/pattern-hills.svg");
+  background-position: center, bottom;
+  background-repeat: repeat, no-repeat;
+}
